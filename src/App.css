@@ -3,6 +3,10 @@
   padding: 0;
   box-sizing: border-box;
   text-decoration: none !important;
-  -webkit-text-size-adjust: 100%;
+  /*-webkit-text-size-adjust: 100%;
   /* overflow-x: hidden; */
+}
+
+.color-secondary{
+  color: rgb(148, 9, 148);
 }

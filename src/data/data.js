@@ -1,5 +1,5 @@
 // import house images
-// import House1 from './assets/img/houses/house1.png';
+//  import House1 from './assets/img/houses/house1.png';
 // import House2 from './assets/img/houses/house2.png';
 // import House3 from './assets/img/houses/house3.png';
 // import House4 from './assets/img/houses/house4.png';

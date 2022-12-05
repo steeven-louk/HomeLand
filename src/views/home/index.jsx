@@ -1,11 +1,15 @@
-import React from "react";
+import React, { useState } from "react";
 import { CardComp } from "../../components/card/card_comp";
 import { housesData } from "../../data/data";
 
+import './style.css';
+
 const Home = () => {
 
-    // const house = housesData;
-    console.log('house', housesData);
+     const house = housesData;
+
+    const [houseData] = useState(house);
+    
 
   return (
     <>
@@ -26,13 +30,19 @@ const Home = () => {
                 </div>
           </div>
           <div className="heros__right col-md-6 col-12">
-            <img src="./assets/house-banner.png" width="80%" alt="banner" className="img-fluid float-end" />
+            <img src="./assets/house-banner.png" width="80%" alt="banner" className="img-fluid d-flex float-sm-none float-md-end" />
           </div>
         </div>
       </section>
 
-      <section className="card-section">
-        <CardComp />
+      <section className="card-section container mt-5 ">
+        <div className="card-container justify-content-center d-flex flex-wrap">
+            {houseData?.map((item=>{
+          return <CardComp houses={item} key={item.id}/>
+        }))} 
+        </div>
+               
+        
       </section>
     </>
   );
