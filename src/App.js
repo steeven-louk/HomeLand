@@ -1,5 +1,7 @@
+import { Outlet, Route, Routes } from 'react-router-dom';
 import './App.css';
 import Navbar from './components/navbar';
+import Details from './views/details/details';
 import Home from './views/home';
 
 function App() {
@@ -8,7 +10,11 @@ function App() {
       <header className="App-header border">
         <Navbar/>
       </header>
-      <Home/>
+      <Routes>
+        <Route path="/home" exact element={<Home/>} />
+        <Route path="/detail/:id" element={<Details/>}/>
+      </Routes>
+      {/* <Home/> */}
     </div>
   );
 }

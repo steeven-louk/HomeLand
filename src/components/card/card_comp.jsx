@@ -15,7 +15,7 @@ console.log('houses',houses);
       <div className="card-body">
         <div className="top-body d-flex gap-3 fw-bold text-white">
           <span className='bg-success rounded p-1'>{houses.country}</span>
-          <span className='bg-danger rounded p-1'>{houses.type}</span>
+          <span className='bkg-secondary rounded p-1'>{houses.type}</span>
         </div>
         <h5 className='fw-bold py-2'>{houses.address}</h5>
         <div className="house-details d-flex gap-3 mb-3 text-muted">
