@@ -2,9 +2,17 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  text-decoration: none !important;
-  /*-webkit-text-size-adjust: 100%;
+  outline: none;
+  -webkit-text-size-adjust: 100%;
   /* overflow-x: hidden; */
+}
+
+a{
+  text-decoration: none;
+}
+
+.App-header{
+  z-index: 10;
 }
 
 .color-secondary{
